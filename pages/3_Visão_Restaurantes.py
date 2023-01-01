@@ -254,12 +254,12 @@ with tab1:
 			
 		with col5:
 			df_aux = avg_std_time_delivery( df, 'No', 'avg_time' )
-			col5.metric( 'Tempo médio de entrega c/ Festival', df_aux )
+			col5.metric( 'Tempo médio de entrega s/ Festival', df_aux )
 			
 			
 		with col6:
 			df_aux = avg_std_time_delivery( df, 'No', 'std_time' )
-			col6.metric( 'Desvio padrão médio de entrega c/ Festival', df_aux )
+			col6.metric( 'Desvio padrão médio de entrega s/ Festival', df_aux )
 			
 			
 # ==========================================
