@@ -61,11 +61,6 @@ def clean_code( df ):
 	df.loc[:, 'Festival'] = df.loc[:, 'Festival'].str.strip()
 
 
-
-	#for i in range( len( df ) ):
-	#   df.loc[i, 'ID'] = df.loc[i, 'ID'].strip()
-	#    df.loc[i, 'Delivery_person_ID'] = df.loc[i, 'Delivery_person_ID'].strip()
-
 	# Excluir as linhas com a idade dos entregadores vazia
 	# ( Conceitos de seleção condicional )
 	linhas_vazias = df['Delivery_person_Age'] != 'NaN '
@@ -95,11 +90,6 @@ def clean_code( df ):
 	linhas_selecionadas = (df['Road_traffic_density'] != 'NaN')
 	df = df.loc[linhas_selecionadas, :].copy()
 
-	# Comando para remover o texto de números
-	#df = df.reset_index( drop=True )
-	#for i in range( len( df ) ):
-	#    df.loc[i, 'Time_taken(min)'] = re.findall( r'\d+', df.loc[i, 'Time_taken(min)'] )
-	#df['Time_taken(min)'] = df['Time_taken(min)'].astype(int)
 
 	#limpando a coluna de time taken
 	df['Time_taken(min)'] = df['Time_taken(min)'].apply( lambda x: x.split( '(min)' )[1] )
