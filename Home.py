@@ -21,7 +21,7 @@ st.markdown(
 	Growth Dashboard foi construído para acompanhar as métricas de crescimento dos Entregadores e Restaurantes.
 	### Como Utilizar esse Growth Dashboard?
 	- Visão Empresa:
-		- Visão Gerencia: Métricas gerais de comportamento.
+		- Visão Gerencial: Métricas gerais de comportamento.
 		- Visão Tática: Indicadores semanais de crescimento.
 		- Visão Geográfica: Insights de geolocalização.
 	- Visão Entregador:
